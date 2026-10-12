@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0d0914">
+
+<title>TraceBack | File Integrity &amp; Forensics</title>
+<link rel="stylesheet" href="/TraceBack/style.css?v=7">
+<script src="/TraceBack/app.js" defer></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+	<!-- Navigation Bar -->
+	<header class="topbar">
+
+		<a class="brand" href="index.html" aria-label="TraceBack Home"> <span
+			class="brand-icon">T</span> <span> TraceBack <small>FILE
+					INTEGRITY &amp; FORENSICS</small>
+		</span>
+		</a>
+
+		<nav class="nav-links" aria-label="Main navigation">
+
+			<a href="index.html" class="active">Home</a> <a href="history">Analysis History</a>
+			<a href="comparison-history">Comparison History</a>
+			
+			<a href="duplicates">Duplicate Files</a>
+			<a href="verify-file">Verify File</a>
+			<a href="verification-history" class="secondary-btn">
+    Verification History
+</a>
+
+		</nav>
+
+		
+	</header>
+
+
+	<main class="page-container">
+
+		<!-- Hero Section -->
+		<section class="hero">
+
+			<div class="eyebrow">
+				<span class="status-dot"></span> FILE FORENSICS WORKBENCH
+			</div>
+
+			<h1>
+				Every file leaves a trace.<br> <span>Verify it with
+					confidence.</span>
+			</h1>
+
+			<p>Inspect file integrity with SHA-256 fingerprints. Analyze a
+				file, compare two files, and review previous results in one focused
+				workspace.</p>
+
+		</section>
+
+
+		<!-- File Tools -->
+		<section class="tool-grid" aria-label="File forensics tools">
+
+			<!-- Analyze File Card -->
+			<article class="tool-card">
+
+				<div class="card-top">
+
+					<div class="card-icon">01</div>
+
+					<div>
+						<h2>Analyze a File</h2>
+
+						<p class="card-description">Create a cryptographic fingerprint
+							and save the result to your analysis history.</p>
+					</div>
+
+				</div>
+
+				<form action="upload-file" method="post"
+					enctype="multipart/form-data" class="tool-form">
+
+					<label for="file"> Choose a file to inspect </label> <input
+						type="file" id="file" name="file" required>
+
+					<p class="hint">Maximum file size: 10 MB · Your file is hashed,
+						not stored.</p>
+
+					<button type="submit" class="primary-btn">
+						Generate SHA-256 <span aria-hidden="true">↗</span>
+					</button>
+
+				</form>
+
+			</article>
+
+
+			<!-- Compare Files Card -->
+			<article class="tool-card">
+
+				<div class="card-top">
+
+					<div class="card-icon">02</div>
+
+					<div>
+						<h2>Compare Two Files</h2>
+
+						<p class="card-description">Compare both SHA-256 fingerprints
+							to check whether file contents are identical.</p>
+					</div>
+
+				</div>
+
+				<form action="compare-files" method="post"
+					enctype="multipart/form-data" class="tool-form">
+
+					<label for="file1"> First file </label> <input type="file"
+						id="file1" name="file1" required> <label for="file2">
+						Second file </label> <input type="file" id="file2" name="file2" required>
+
+					<p class="hint">Both files are required · Maximum 10 MB per
+						file.</p>
+
+					<button type="submit" class="primary-btn">
+						Compare fingerprints <span aria-hidden="true">↗</span>
+					</button>
+
+				</form>
+
+			</article>
+
+		</section>
+
+
+		<!-- Feature Information -->
+		<section class="info-strip" aria-label="TraceBack features">
+
+			<div>
+
+				<span class="info-symbol" aria-hidden="true">#</span>
+
+				<div>
+					<strong>SHA-256 Fingerprints</strong>
+
+					<p>Unique digest for each file's contents.</p>
+				</div>
+
+			</div>
+
+
+			<div>
+
+				<span class="info-symbol" aria-hidden="true">✓</span>
+
+				<div>
+					<strong>Integrity Verification</strong>
+
+					<p>Matching hashes indicate matching contents.</p>
+				</div>
+
+			</div>
+
+
+			<div>
+
+				<span class="info-symbol" aria-hidden="true">↻</span>
+
+				<div>
+					<strong>Analysis History</strong>
+
+					<p>Review past analyses and matching hashes.</p>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- Footer -->
+		<footer class="page-footer">
+			TraceBack <span>•</span> File Integrity &amp; Forensics Workbench
+		</footer>
+
+	</main>
+
+<footer class="site-footer">
+    Made with <span class="heart">&hearts;</span> by
+    <span class="author">Shubham</span>
+</footer>
+
+</body>
+</html>

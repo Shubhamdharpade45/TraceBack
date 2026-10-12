@@ -1,0 +1,17 @@
+# Eclipse settings
+.settings/
+
+# Build output
+/build/
+/bin/
+
+# Compiled Java files
+*.class
+
+# Local secrets
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
